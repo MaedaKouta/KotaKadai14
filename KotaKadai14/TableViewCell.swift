@@ -10,11 +10,11 @@ import UIKit
 class TableViewCell: UITableViewCell {
 
     @IBOutlet private weak var checkImage: UIImageView!
-    @IBOutlet private weak var listLabel: UILabel!
+    @IBOutlet private weak var nameLabel: UILabel!
 
     func configure(checkItem: CheckItem) {
         checkImage.isHidden = !checkItem.isChecked
-        listLabel.text = checkItem.name
+        nameLabel.text = checkItem.name
     }
 
 }

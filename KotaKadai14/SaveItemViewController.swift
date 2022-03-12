@@ -9,10 +9,10 @@ import UIKit
 
 class SaveItemViewController: UIViewController {
 
-    @IBOutlet private weak var saveItemTextField: UITextField!
+    @IBOutlet private weak var nameTextField: UITextField!
 
     func getSaveItem() -> String {
-        return saveItemTextField.text ?? ""
+        nameTextField.text ?? ""
     }
 
 }
