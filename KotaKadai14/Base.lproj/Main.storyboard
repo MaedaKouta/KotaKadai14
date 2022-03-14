@@ -54,7 +54,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="checkImage" destination="d3T-GG-3lb" id="xl3-jf-9wM"/>
-                                            <outlet property="listLabel" destination="Ql4-Bn-Sv7" id="GHy-4t-i0O"/>
+                                            <outlet property="nameLabel" destination="Ql4-Bn-Sv7" id="hIa-2n-5H8"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -133,7 +133,7 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="saveItemTextField" destination="EXG-Jw-U5s" id="iec-ej-Nf6"/>
+                        <outlet property="nameTextField" destination="EXG-Jw-U5s" id="9J8-EP-mCM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RvP-RE-qxF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
