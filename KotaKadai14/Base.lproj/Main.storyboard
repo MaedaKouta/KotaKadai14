@@ -76,7 +76,7 @@
                     <navigationItem key="navigationItem" id="YSk-9l-3cg">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Fyd-aM-VyU">
                             <connections>
-                                <segue destination="kRK-oe-7rD" kind="show" id="qdG-Z5-9Rp"/>
+                                <segue destination="W5Q-ZX-ijb" kind="presentation" identifier="nextVC" id="JWv-mQ-aWR"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -86,12 +86,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="649" y="153"/>
+            <point key="canvasLocation" x="643" y="153"/>
         </scene>
-        <!--Save Item View Controller-->
+        <!--Save Name View Controller-->
         <scene sceneID="ZsC-GU-faO">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="kRK-oe-7rD" customClass="SaveItemViewController" customModule="KotaKadai14" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="kRK-oe-7rD" customClass="SaveNameViewController" customModule="KotaKadai14" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aH9-iw-Kjs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -127,7 +127,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="H5A-xe-tGI">
                             <connections>
-                                <segue destination="zG4-AY-tng" kind="unwind" unwindAction="saveExitWithSegue:" id="Kak-Il-lk0"/>
+                                <action selector="didTapSaveButton:" destination="kRK-oe-7rD" id="lUu-V2-TAy"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -139,7 +139,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RvP-RE-qxF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="zG4-AY-tng" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1444.9275362318842" y="152.67857142857142"/>
+            <point key="canvasLocation" x="2264" y="153"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dFB-Ws-FWD">
@@ -158,6 +158,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SSR-DY-YzQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-100.00000000000001" y="154.01785714285714"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="X3n-Zx-Y85">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="W5Q-ZX-ijb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="lgm-qg-LrW"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vzl-LQ-hxI">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kRK-oe-7rD" kind="relationship" relationship="rootViewController" id="Y1m-Da-beS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CIB-OG-VhV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1444.9275362318842" y="152.67857142857142"/>
         </scene>
     </scenes>
     <resources>

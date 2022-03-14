@@ -38,17 +38,26 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.reloadData()
     }
 
-    @IBAction func cancelExit(segue: UIStoryboardSegue) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let identifier = segue.identifier else { return }
+        if identifier == "nextVC" {
+            guard let nav = segue.destination as? UINavigationController, let saveNameVC = nav.topViewController as? SaveNameViewController else {
+                return
+            }
+            saveNameVC.delegate = self
+        }
     }
 
-    @IBAction func saveExit(segue: UIStoryboardSegue) {
-        let saveVC = segue.source as! SaveItemViewController
-        let saveItem = saveVC.getSaveItem()
-        if !saveItem.isEmpty {
-            checkItems.append(.init(name: saveItem, isChecked: false))
-        tableView.reloadData()
-        }
+    @IBAction func cancelExit(segue: UIStoryboardSegue) {
     }
 
 }
 
+extension ViewController:  SaveNameDelegate {
+    func saveName(name: String) {
+        checkItems.append(.init(name: name, isChecked: false))
+        dismiss(animated: true, completion: nil)
+        tableView.reloadData()
+        
+    }
+}

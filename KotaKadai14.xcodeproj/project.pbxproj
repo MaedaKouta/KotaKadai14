@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B9034F2327DB0F6E008174B5 /* SaveItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9034F2227DB0F6E008174B5 /* SaveItemViewController.swift */; };
+		B9034F2327DB0F6E008174B5 /* SaveNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9034F2227DB0F6E008174B5 /* SaveNameViewController.swift */; };
 		B9B39A6927DAFDA1009C8079 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B39A6827DAFDA1009C8079 /* AppDelegate.swift */; };
 		B9B39A6B27DAFDA1009C8079 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B39A6A27DAFDA1009C8079 /* SceneDelegate.swift */; };
 		B9B39A6D27DAFDA1009C8079 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B39A6C27DAFDA1009C8079 /* ViewController.swift */; };
@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B9034F2227DB0F6E008174B5 /* SaveItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveItemViewController.swift; sourceTree = "<group>"; };
+		B9034F2227DB0F6E008174B5 /* SaveNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveNameViewController.swift; sourceTree = "<group>"; };
 		B9B39A6527DAFDA1009C8079 /* KotaKadai14.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KotaKadai14.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9B39A6827DAFDA1009C8079 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9B39A6A27DAFDA1009C8079 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 				B9B39A6A27DAFDA1009C8079 /* SceneDelegate.swift */,
 				B9B39A6C27DAFDA1009C8079 /* ViewController.swift */,
 				B9B39A7C27DAFE42009C8079 /* TableViewCell.swift */,
-				B9034F2227DB0F6E008174B5 /* SaveItemViewController.swift */,
+				B9034F2227DB0F6E008174B5 /* SaveNameViewController.swift */,
 				B9B39A6E27DAFDA1009C8079 /* Main.storyboard */,
 				B9B39A7127DAFDA2009C8079 /* Assets.xcassets */,
 				B9B39A7327DAFDA2009C8079 /* LaunchScreen.storyboard */,
@@ -169,7 +169,7 @@
 				B9B39A6D27DAFDA1009C8079 /* ViewController.swift in Sources */,
 				B9B39A7D27DAFE42009C8079 /* TableViewCell.swift in Sources */,
 				B9B39A6927DAFDA1009C8079 /* AppDelegate.swift in Sources */,
-				B9034F2327DB0F6E008174B5 /* SaveItemViewController.swift in Sources */,
+				B9034F2327DB0F6E008174B5 /* SaveNameViewController.swift in Sources */,
 				B9B39A6B27DAFDA1009C8079 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
